@@ -1,5 +1,7 @@
 # HYPERLAND DOTFILES
 
+My personal dotfiles for my own customization of an Hyperland based desktop environment
+
 ## SETUP SPECIFICATIONS
 
 | Category | Themes / Configuration |
