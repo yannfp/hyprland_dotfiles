@@ -7,6 +7,9 @@ let g:airline_theme = 'tokyonight'
 let g:airline_section_y = ''
 let g:airline_section_z = '%l:%c'
 
+" Tell Airline to ignore buffers that are plugins, help, etc.
+let g:airline_exclude_filetypes = ['nerdtree', 'qf', 'help', 'man']
+
 " For Git Branch Information
 "let g:airline#extensions#fugitive#statusline = 0
 "
