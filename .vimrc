@@ -43,3 +43,4 @@ source ~/dotfiles/.vim/config/keymaps.vim
 source ~/dotfiles/.vim/config/airline.vim
 source ~/dotfiles/.vim/config/nerdtree.vim
 source ~/dotfiles/.vim/config/tags.vim
+source ~/dotfiles/.vim/config/startify.vim
