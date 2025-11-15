@@ -9,7 +9,7 @@ My personal dotfiles for my own customization of an Hyperland based desktop envi
 ## SETUP SPECIFICATIONS
 
 | Category | Themes / Configuration |
-| --- | --- |
+|:---: | :---: |
 | Windows Manager | Hyperland |
 | Terminal | Kitty |
 | Prompt | Startship |
