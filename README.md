@@ -1,9 +1,9 @@
 <h1 align="center">CONFIGURATION DOTFILES</h1>
 
+<p align="center">
 ![Stars Label](https://img.shields.io/badge/STARS-424242?style=flat-square)&nbsp;![Star Count](https://img.shields.io/badge/561-00A9FF?style=flat-square)
 ![Last Commit Label](https://img.shields.io/badge/LAST%20COMMIT-424242?style=flat-square)&nbsp;![Last Commit Date](https://img.shields.io/badge/SEPTEMBER%202023-00A9FF?style=flat-square)
 
-<p align="center">
 My personal dotfiles for my own customization of an Hyperland based desktop environment
 </p>
 
