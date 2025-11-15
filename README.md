@@ -1,4 +1,4 @@
-# HYPERLAND DOTFILES
+<h3 style="text-align:center;">H3 that is center aligned</h3>
 
 <p style="text-align:center;">
 My personal dotfiles for my own customization of an Hyperland based desktop environment
