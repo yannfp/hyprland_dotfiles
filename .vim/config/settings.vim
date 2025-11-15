@@ -1,4 +1,4 @@
-" General Settings of Vim
+" VIM SETTINGS
 
 " Enable syntax highlighting (colors adapting to language)
 syntax on

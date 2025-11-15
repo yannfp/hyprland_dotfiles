@@ -1,7 +1,8 @@
 " KEYMAPS SETTINGS
 
 " Set the leader key
-let mapleader = ","
+let mapleader = " "
+let maplocalleader = " "
 
 " Open the NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
