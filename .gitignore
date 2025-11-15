@@ -3,6 +3,11 @@
 *.swo
 *.bak
 
+# --- Vim Plugin Manager Files ---
+plugged/
+.vim/autoload/
+.vim/plugged/
+
 # Vim-Plug installed plugins (NEVER commit these!)
 plugged/
 

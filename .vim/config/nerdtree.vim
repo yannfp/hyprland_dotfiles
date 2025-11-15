@@ -2,7 +2,7 @@
 
 " Enable Devicons/Filetype Icons
 let g:WebDevIconsNerdTreeBeforeGlyph = 1
-let g:NERDTreeDirArrows = 0   " Optional: Use filetype icons instead of arrows for directories
+let g:NERDTreeDirArrows = 0
 let g:NERDTreeDirArrowExpandable = ' '
 let g:NERDTreeDirArrowCollapsible = ' '
 
