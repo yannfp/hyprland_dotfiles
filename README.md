@@ -1,10 +1,8 @@
-<h1 style="text-align: center;">
-HYPERLAND DOTFILES
-</h1>
+# HYPERLAND DOTFILES
 
-<center>
+<p style="text-align:center;">
 My personal dotfiles for my own customization of an Hyperland based desktop environment
-</center>
+</p>
 
 ## SETUP SPECIFICATIONS
 
