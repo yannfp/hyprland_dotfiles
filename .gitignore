@@ -1,0 +1,10 @@
+# Vim/Neovim files
+*.swp
+*.swo
+*.bak
+
+# Vim-Plug installed plugins (NEVER commit these!)
+plugged/
+
+# OS files
+.DS_Store
