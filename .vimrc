@@ -1,6 +1,9 @@
 " --- 1. VIM-PLUG SETUP ---
 call plug#begin('~/.vim/plugged')
 
+" Plugin for the startup screen/home page
+Plug 'mhinz/vim-startify'
+
 " Plugin for auto-closing brackets, parentheses, etc.
 Plug 'jiangmiao/auto-pairs'
 
