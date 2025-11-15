@@ -1,6 +1,6 @@
-<h1 align="center;">CONFIGURATION DOTFILES</h1>
+<h1 align="center">CONFIGURATION DOTFILES</h1>
 
-<p align="center;">
+<p align="center">
 My personal dotfiles for my own customization of an Hyperland based desktop environment
 </p>
 
