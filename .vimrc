@@ -34,7 +34,6 @@ Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " --- 2. SOURCE MODULAR CONFIG FILES ---
-
 source ~/dotfiles/.vim/config/settings.vim
 source ~/dotfiles/.vim/config/themes.vim
 source ~/dotfiles/.vim/config/keymaps.vim
