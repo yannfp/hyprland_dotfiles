@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-dir="~/.config/hypr/rofi"
+dir="~/dotfiles/.config/hypr/themes"
 uptime=$(uptime -p | sed -e 's/up //g')
 
 rofi_command="rofi -no-config -theme $dir/powermenu.rasi"
