@@ -6,7 +6,9 @@
 | --- | --- |
 | Windows Manager | Hyperland |
 | Terminal | Kitty |
+| Prompt | Startship |
 | Shell | Zsh |
+| Text Editor | Vim |
 | Status Bar | Waybar |
 | Wallpaper | Hyprpaper |
 | Lockscreen | Hyprlock |
