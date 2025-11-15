@@ -1,0 +1,82 @@
+{
+	"layer": "top",
+		"modules-left": ["custom/date", "clock", "custom/spotify"],
+		"modules-center": ["hyprland/workspaces"],
+		"modules-right": [ "pulseaudio", "battery", "network"],
+
+		"hyprland/workspaces": {
+			"format": "{name}",
+
+			"on-click": "activate"
+		},
+
+		"custom/date": {
+			"format": "{}",
+			"exec": "LC_TIME=en_US.UTF-8 date +'%a %d %b' | sed -e 's/\\./ /g' -e 's/\\b\\(.\\)/\\u\\1/g'",
+			"interval": 60,
+			"tooltip": false
+		},
+
+		"clock": {
+			"interval": 1,
+
+			"format": "󰥔 {:%I:%M %p}",
+		},
+
+		"custom/spotify": {
+
+			"interval": 2,
+
+			"exec-if": "playerctl -p spotify status", 
+			"exec": "playerctl -p spotify metadata --format ' {{ title }} - {{ artist }}' 2>/dev/null || echo ' '",
+
+			"on-click": "playerctl -p spotify play-pause || exec spotify-launcher",
+
+			"on-scroll-up": "playerctl -p spotify next",
+			"on-scroll-down": "playerctl -p spotify previous"
+		},
+
+		"pulseaudio": {
+			"format": "{icon} {volume}%",
+			"format-muted": "  0%",
+			
+			"format-icons": {
+				"default": ["", " "],
+				"muted": ""
+			},
+			"on-click": "pamixer -t"
+		},
+
+		"battery": {
+			"battery": "BAT0",
+
+			"format": "{icon}{capacity}%",
+
+			"format-icons": {
+				"default": " ",
+				"charging": "",
+				"full": " ",
+				"80": " ",
+				"50": " ",
+				"20": " ",
+				"10": " "
+			}
+		},
+
+		"network": {
+			"interval": 5,
+
+			"format-wifi": "󰤨 {essid}",
+			"format-disconnected": "󰤭 ",
+			"format-icons": [" "],
+		
+			"format-icons": {
+				"default": "󰤨 ", 
+				"0": "󰤯 ",    
+				"20": "󰤟 ",
+				"40": "󰤢 ",   
+				"60": "󰤢 ",   
+				"80": "󰤥 "    
+			}
+		}
+}
