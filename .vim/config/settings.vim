@@ -38,5 +38,3 @@ set colorcolumn=80
 
 " Automatically change the current directory to the one of the file being edited
 set autochdir
-
-

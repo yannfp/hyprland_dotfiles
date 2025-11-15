@@ -18,5 +18,3 @@ let g:airline_section_z = '%l:%c'
 "
 "let g:airline#extensions#branch#enabled = 1
 "let g:airline#extensions#fugitive#enabled = 1
-
-
