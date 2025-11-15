@@ -12,3 +12,4 @@
 | Lockscreen | Hyprlock |
 | App Launcher | Rofi |
 | Notifications | Dunst (not configured yet) |
+| Screenshot | Grim / Slurp (still configuring) |
