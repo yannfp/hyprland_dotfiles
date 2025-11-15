@@ -1,4 +1,4 @@
-" --- 1. VIM-PLUG ---
+" --- 1. VIM-PLUG SETUP ---
 call plug#begin('~/.vim/plugged')
 
 " Plugin for auto-closing brackets, parentheses, etc.
@@ -33,55 +33,8 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
-" --- 2. CORE VIM SETTINGS ---
+" --- 2. SOURCE MODULAR CONFIG FILES ---
 
-" Enable syntax highlighting (colors adapting to language)
-syntax on
-
-" Enable filetype detection, plugins, and indentation
-" This is crucial for auto-indent and omni-completion
-filetype plugin indent on
-
-" Enable auto-indenting
-set autoindent
-
-" Use smart indentation (better for C-like languages)
-set smartindent
-
-" Set tab width to 4 spaces
-set tabstop=4
-set shiftwidth=4
-
-" Show line numbers
-set number
-set relativenumber
-
-" Show the command you are typing
-set showcmd
-
-" Enable incremental search (searches as you type)
-set incsearch
-
-" Highlight search results
-set hlsearch
-
-" Set clipboard to all computer
-set clipboard=unnamedplus
-
-" Set the column 80
-set colorcolumn=80
-
-" Automatically change the current directory to the one of the file being edited
-set autochdir
-
-
-" --- 3. THEME ---
-
-" Set the colorscheme to Tokyo Night
-set termguicolors
-
-colorscheme tokyonight
-let g:tokyonight_style = 'night'
 
 " --- 4. Airline Bar ---
 let g:airline_powerline_fonts = 1
@@ -130,34 +83,6 @@ let g:gutentags_cache_dir = expand('~/.cache/tags')
 let g:tagbar_status_line = 0
 
 let g:gutentags_modules = ['ctags', 'cscope']
-"
-" Cscope Mappings
-"
-" Find all references to the symbol under the cursor
-nmap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
-
-" Find the global definition
-nmap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
-
-" Find all functions that CALL this function
-nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
-
-" Find all functions CALLED BY this function
-nmap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
-
-" Find all files that #include this file
-
-" --- 7. Shortcuts ---
-
-" Set the leader key
-let mapleader = ","
-
-" Open the NERDTree
-nnoremap <leader>n :NERDTreeToggle<CR>
-
-" Open tagbar
-nmap <leader>t :TagbarToggle<CR>
-
 
 " --- 8. Extras ---
 
