@@ -1,0 +1,89 @@
+{
+	"logo": {
+		"type": "auto",        // Logo type: auto, builtin, small, file, etc.
+		"source": "arch",      // Built-in logo name or file path
+		"width": 65,           // Width in characters
+		"height": 20,          // Height in characters
+
+		"padding": {
+			"top": 2,          // Top padding
+			"bottom": 0,
+			"left": 10,         // Left padding
+			"right": 0         // Right padding
+		},
+		
+
+	},
+
+	"display": {
+		"separator": ": ",
+		"color": {
+			"title": "red"
+		},
+		"key": {
+			"width": 20,
+			"type": "string"
+		},
+		"bar": {
+			"width": 10,
+			"char": {
+				"elapsed": "■",
+				"total": "-",
+			},
+		},
+		"percent": {
+			"type": 9,
+			"color": {
+				"green": "green",
+				"yellow": "light_yellow",
+				"red": "light_red"
+			}
+		}
+	},
+
+	"modules": [
+		"break",
+		"break",
+		"break",
+		"title",
+		"separator",
+		{
+			"type": "os",
+			"key": "OS",
+			"format": "{name} {version}"
+		},
+		{
+			"type": "kernel",
+			"key": "Kernel"
+		},
+		{
+			"type": "memory",
+			"key": "Memory",
+			"percent": {
+				"type": 3,
+				"green": 30,
+				"yellow": 70
+			}
+		},
+		{
+			"type": "uptime",
+			"key": "Uptime"
+		},
+		{
+			"type": "wm",
+			"key": "Windows Manager"
+		},
+		{
+			"type": "theme",
+			"key": "Theme"
+		},
+		{
+			"type": "cpu",
+			"key": "CPU"
+		},
+		{
+			"type": "gpu",
+			"key": "GPU"
+		}
+	]
+}
