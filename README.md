@@ -7,7 +7,6 @@
 <br/>
 
 My personal dotfiles for my own customization of an Hyperland based desktop environment
-</div>
 
 ## SETUP SPECIFICATIONS
 
@@ -25,3 +24,5 @@ My personal dotfiles for my own customization of an Hyperland based desktop envi
 | Notifications | Dunst (not configured yet) |
 | Screenshot | Grim / Slurp (still configuring) |
 | Browser | Brave |
+
+</div>
