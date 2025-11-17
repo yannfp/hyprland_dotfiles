@@ -1,9 +1,9 @@
 * {
 	border: none;
 
-	font-family: "JetBrainsMono Nerd Font", "tabler-icons";
+	font-family: "JetBrainsMonoNerdFont", "Symbols Nerd Font Mono";
 	font-size: 13px;
-	
+
 	color: #cdd6f4;
 
 	padding: 0px 5px;
@@ -32,10 +32,10 @@
     background-color: #5d5d5d;
     border-radius: 10px;
 
-    margin-left: 3px;
-    margin-right: 3px;
-	margin-top: 3px;
-	margin-bottom:3px;
+    margin-left: 2px;
+    margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom:2px;
 
     padding: 0px 0px;
 
