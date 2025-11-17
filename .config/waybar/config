@@ -1,8 +1,18 @@
 {
 	"layer": "top",
-		"modules-left": ["custom/date", "clock", "custom/spotify"],
+		"modules-left": [
+			"custom/date",
+			"clock",
+			"custom/spotify"
+		],
+		
 		"modules-center": ["hyprland/workspaces"],
-		"modules-right": [ "pulseaudio", "battery", "network"],
+		
+		"modules-right": [
+			"pulseaudio",
+			"network",
+			"battery"
+		],
 
 		"hyprland/workspaces": {
 			"format": "{name}",

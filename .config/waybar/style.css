@@ -1,7 +1,9 @@
 * {
 	border: none;
-	font-family: "JetBrainsMono Nerd Font";
+
+	font-family: "JetBrainsMono Nerd Font", "tabler-icons";
 	font-size: 13px;
+	
 	color: #cdd6f4;
 
 	padding: 0px 5px;
@@ -46,4 +48,3 @@
 
 	padding: 0px 8px;
 }
-
