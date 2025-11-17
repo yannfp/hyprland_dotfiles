@@ -88,7 +88,6 @@ alias jctl="journalctl -p 3 -xb"
 
 # Recent installed packages
 alias rip="expac --timefmt='%Y-%m-%d %T' '%l\t%n %v' | sort | tail -200 | nl"
-fastfetch -l garuda
 
 #------------------------------------------------------------------------------
 # My Stuff
@@ -134,3 +133,8 @@ alias gpu-perf='sudo envycontrol -s nvidia && echo "GPU set to NVIDIA. REBOOT re
 
 # Alias to check the current mode
 alias gpu-status='envycontrol -q'
+
+
+if [ -x "$(command -v fastfetch)" ]; then
+    fastfetch
+fi
