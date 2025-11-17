@@ -134,7 +134,4 @@ alias gpu-perf='sudo envycontrol -s nvidia && echo "GPU set to NVIDIA. REBOOT re
 # Alias to check the current mode
 alias gpu-status='envycontrol -q'
 
-
-if [ -x "$(command -v fastfetch)" ]; then
-    fastfetch
-fi
+fastfetch
