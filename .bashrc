@@ -110,7 +110,6 @@ function push()
 
 	rm -f main
 
-	git add .
 	git commit -m "$1"
 	
 	if [ -n "$2" ]; then
