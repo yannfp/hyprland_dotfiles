@@ -110,7 +110,7 @@ function push()
 
 	rm -f main
 
-	git commit -m "$1"
+	git commit -a -m "$1"
 	
 	if [ -n "$2" ]; then
 		git tag -ma "$2"
