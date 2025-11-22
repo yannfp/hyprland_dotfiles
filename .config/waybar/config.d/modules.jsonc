@@ -5,12 +5,64 @@
 // File to code the configuration of general modules included  in the default waybar
 
 {
-		"clock": {
-			// Update the module every second
-			"interval": 1,
+	"clock": {
+		// Update the module every second
+		"interval": 1,
 
-			// Hour in 12 hour format
-			// Hour:Minute AM/PM
-			"format": "󰥔 {:%I:%M %p}",
+		// Hour in 12 hour format
+		// Hour:Minute AM/PM
+		"format": "󰥔 {:%I:%M %p}",
+	},
+
+	"pulseaudio": {
+		// Default format
+		"format": "{icon} {volume}%",
+
+		// Muted format
+		"format-muted": " 0%",
+
+		// Update the icon when increasing or decreasing volume
+		// Two icons there are two ranges 0-49% and 50-100%
+		"format-icons": {
+			"default": ["", ""],
 		},
+
+		// On click mute the sound
+		"on-click": "pamixer -t"
+	},
+
+	"battery": {
+		// Get the battery value of the computer value
+		"battery": "BAT0",
+
+		"format": "{icon} {capacity}%",
+
+		"format-icons": {
+			"default": "",
+			"charging": "",
+			"full": "",
+			"80": "",
+			"50": "",
+			"20": "",
+			"10": ""
+		}
+	},
+
+	"network": {
+		// Update network status every 5 seconds
+		"interval": 5,
+
+		"format-wifi": "󰤨 {essid}",
+		"format-disconnected": "󰤭 No Connection",
+
+		"format-icons": {
+			"default": "󰤨 ", 
+			"0": "󰤯 ",    
+			"20": "󰤟 ",
+			"40": "󰤢 ",   
+			"60": "󰤢 ",   
+			"80": "󰤥 "    
+		}
+	}
+
 }

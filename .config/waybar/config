@@ -1,79 +1,22 @@
 {
 	"include": [
-		"~/.config/waybar/config.d/modules.jsonc"
-		"~/.config/waybar/config.d/custom_modules.jsonc"
+		"~/.config/waybar/config.d/modules.jsonc",
+		"~/.config/waybar/config.d/custom_modules.jsonc",
 		"~/.config/waybar/config.d/hypr_modules.jsonc"
 	],
 
-		"layer": "top",
-		"modules-left": [
-			"custom/date",
-			"clock",
-			"custom/spotify"
-		],
-		
-		"modules-center": ["hyprland/workspaces"],
-		
-		"modules-right": [
-			"pulseaudio",
-			"network",
-			"battery"
-		],
+	"layer": "top",
+	"modules-left": [
+		"custom/date",
+		"clock",
+		"custom/spotify"
+	],
 
-		"custom/spotify": {
+	"modules-center": ["hyprland/workspaces"],
 
-			"interval": 2,
-
-			"exec-if": "playerctl -p spotify status", 
-			"exec": "playerctl -p spotify metadata --format ' {{ title }} - {{ artist }}' 2>/dev/null || echo ' '",
-
-			"on-click": "playerctl -p spotify play-pause || exec spotify-launcher",
-
-			"on-scroll-up": "playerctl -p spotify next",
-			"on-scroll-down": "playerctl -p spotify previous"
-		},
-
-		"pulseaudio": {
-			"format": "{icon} {volume}%",
-			"format-muted": "  0%",
-			
-			"format-icons": {
-				"default": ["", " "],
-				"muted": ""
-			},
-			"on-click": "pamixer -t"
-		},
-
-		"battery": {
-			"battery": "BAT0",
-
-			"format": "{icon}{capacity}%",
-
-			"format-icons": {
-				"default": " ",
-				"charging": "",
-				"full": " ",
-				"80": " ",
-				"50": " ",
-				"20": " ",
-				"10": " "
-			}
-		},
-
-		"network": {
-			"interval": 5,
-
-			"format-wifi": "󰤨 {essid}",
-			"format-disconnected": "󰤭 ",
-			"format-icons": [" "],
-		
-			"format-icons": {
-				"default": "󰤨 ", 
-				"0": "󰤯 ",    
-				"20": "󰤟 ",
-				"40": "󰤢 ",   
-				"60": "󰤢 ",   
-				"80": "󰤥 "    
-			}
-		}
+	"modules-right": [
+		"pulseaudio",
+		"network",
+		"battery"
+	],
 }
