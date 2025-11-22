@@ -5,7 +5,12 @@
 		"~/.config/waybar/config.d/hypr_modules.jsonc"
 	],
 
+	// Position of the waybar
 	"layer": "top",
+
+	// Spacing between elemens of the waybar
+	"spacing": 5,
+
 	"modules-left": [
 		"custom/date",
 		"clock",
