@@ -1,0 +1,16 @@
+//#############################################################################
+// GENERAL MODULES
+//#############################################################################
+
+// File to code the configuration of general modules included  in the default waybar
+
+{
+		"clock": {
+			// Update the module every second
+			"interval": 1,
+
+			// Hour in 12 hour format
+			// Hour:Minute AM/PM
+			"format": "󰥔 {:%I:%M %p}",
+		},
+}

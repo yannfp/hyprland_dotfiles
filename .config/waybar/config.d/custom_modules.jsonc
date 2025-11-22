@@ -1,0 +1,14 @@
+//#############################################################################
+// CUSTOM MODULES
+//#############################################################################
+
+// File to code the configuration of custom user modules
+
+{
+	"custom/date": {
+		"format": "{}",
+		"exec": "LC_TIME=en_US.UTF-8 date +'%a %d %b' | sed -e 's/\\./ /g' -e 's/\\b\\(.\\)/\\u\\1/g'",
+		"interval": 60,
+		"tooltip": false
+	},
+}

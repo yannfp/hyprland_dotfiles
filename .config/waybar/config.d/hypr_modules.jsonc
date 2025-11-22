@@ -1,0 +1,17 @@
+//#############################################################################
+// HYPERLAND MODULES
+//#############################################################################
+
+// File to code the configuration of hyperland modules
+
+{
+	// Workspaces
+	"hyprland/workspaces": {
+		// Only show the name (currently numbers) of each workspace
+		"format": "{name}",
+
+		// Go to the workspace on click
+		"on-click": "activate"
+	},
+
+}
