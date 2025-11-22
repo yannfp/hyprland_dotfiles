@@ -1,5 +1,11 @@
 {
-	"layer": "top",
+	"include": [
+		"~/.config/waybar/config.d/modules.jsonc"
+		"~/.config/waybar/config.d/custom_modules.jsonc"
+		"~/.config/waybar/config.d/hypr_modules.jsonc"
+	],
+
+		"layer": "top",
 		"modules-left": [
 			"custom/date",
 			"clock",
@@ -13,25 +19,6 @@
 			"network",
 			"battery"
 		],
-
-		"hyprland/workspaces": {
-			"format": "{name}",
-
-			"on-click": "activate"
-		},
-
-		"custom/date": {
-			"format": "{}",
-			"exec": "LC_TIME=en_US.UTF-8 date +'%a %d %b' | sed -e 's/\\./ /g' -e 's/\\b\\(.\\)/\\u\\1/g'",
-			"interval": 60,
-			"tooltip": false
-		},
-
-		"clock": {
-			"interval": 1,
-
-			"format": "󰥔 {:%I:%M %p}",
-		},
 
 		"custom/spotify": {
 
