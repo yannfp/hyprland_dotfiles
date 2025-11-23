@@ -31,6 +31,10 @@
 	margin-left: 10px;
 }
 
+#pulseaudio {
+    min-width: 46px;
+}
+
 #workspaces button {
     background-color: #5d5d5d;
     border-radius: 10px;
