@@ -12,7 +12,7 @@
     bg3:   #333333;    /* Your module island background color */
 
     /* FIX: Custom variables needed by powermenu.rasi (using your desired Waybar colors) */
-    ac:    #40a9a1;    /* Your Waybar Active Color */
+    ac:    #A16DEE;    /* Your Waybar Active Color */
     bg4:   @bg3;       /* Used for borders/secondary dark backgrounds */
     red:   #FF3333;    /* For errors/confirmation buttons */
 }
