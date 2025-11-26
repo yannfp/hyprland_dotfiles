@@ -40,10 +40,8 @@ call plug#end()
 
 let s:actual_file = resolve(expand('<sfile>:p'))
 
-" 2. Get the directory containing the actual file (e.g., ~/dotfiles)
 let s:dotfiles_dir = fnamemodify(s:actual_file, ':h')
 
-" 3. Source the files relative to that real directory
 execute 'source ' . s:dotfiles_dir . '/.vim/config/settings.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/themes.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/keymaps.vim'
