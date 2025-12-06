@@ -48,3 +48,5 @@ execute 'source ' . s:dotfiles_dir . '/.vim/config/keymaps.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/airline.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/nerdtree.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/tags.vim'
+
+autocmd BufRead,BufNewFile *.conf set filetype=sh
