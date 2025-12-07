@@ -2,7 +2,7 @@
 	border: none;
 
 	font-family: "JetBrainsMonoNerdFont", "Symbols Nerd Font Mono";
-	font-size: 10px;
+	font-size: 12px;
 
 	min-height: 0;
 
@@ -46,7 +46,7 @@
 	margin-top: 2px;
 	margin-bottom:2px;
 
-    padding: 0px 0px;
+ 	padding: 0px 0px;
 
 	transition: padding 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
@@ -55,5 +55,5 @@
     background-color: #A16DEE;
     color: #1e1e1e;
 
-	padding: 0px 8px;
+	padding: 0px 6px;
 }
