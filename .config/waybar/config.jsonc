@@ -15,14 +15,12 @@
 
 	"modules-left": [
 		"custom/date",
-		"clock",
-		"custom/spotify"
+		"clock"
 	],
 
 	"modules-center": ["hyprland/workspaces"],
 
 	"modules-right": [
-		"pulseaudio",
 		"network",
 		"battery"
 	],

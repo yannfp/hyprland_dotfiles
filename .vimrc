@@ -5,7 +5,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-startify'
 
 " Plugin for auto-closing brackets, parentheses, etc.
-Plug 'jiangmiao/auto-pairs'
+"Plug 'jiangmiao/auto-pairs'
+Plug 'cohama/lexima.vim'
 
 " The Tokyo Night theme
 Plug 'ghifarit53/tokyonight-vim'
