@@ -8,7 +8,7 @@
 
     width = 250
     height = 100
-    origin = bottom-center
+    origin = top-center
 
     offset = 40x40
     scale = 0
