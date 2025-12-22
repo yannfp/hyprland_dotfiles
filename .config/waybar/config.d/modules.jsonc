@@ -37,7 +37,7 @@
 		// Get the battery value of the computer value
 		"battery": "BAT0",
 
-		"format": "{icon} {capacity}%",
+		"format": "{icon}{capacity}%",
 
 		"format-icons": {
 			"default": " ",
