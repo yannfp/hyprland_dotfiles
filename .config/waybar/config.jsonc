@@ -10,9 +10,6 @@
 	
 	"height": 10,
 
-	// Spacing between elemens of the waybar
-	"spacing": 5,
-
 	"modules-left": [
 		"custom/date",
 		"clock"
