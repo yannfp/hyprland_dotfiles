@@ -23,6 +23,6 @@ My personal dotfiles for my own customization of an Hyperland based desktop envi
 | App Launcher | Rofi |
 | Notifications | Dunst (not configured yet) |
 | Screenshot | Grim / Slurp (still configuring) |
-| Browser | Brave |
+| Browser | Firefox |
 
 </div>
