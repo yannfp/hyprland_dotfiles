@@ -141,25 +141,4 @@ fi
 [ ! -x /usr/bin/yay ] && [ -x /usr/bin/paru ] && alias yay='paru'
 
 alias vi='vim'
-
-# --- 3. FUNCTIONS ---
-function push()
-{
-	if [ -z "$1" ]; then
-		echo "Error: Commit message missing"
-		return 1
-	fi
-
-	clang-format *.c -i 2>/dev/null
-	clang-format *.h -i 2>/dev/null
-
-	rm -f main
-
-	git commit -a -m "$1"
-	
-	if [ -n "$2" ]; then
-		git tag -ma "$2"
-	fi
-
-	git push --follow-tags
-}
+echo -ne '\e[5 q'
