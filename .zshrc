@@ -3,6 +3,10 @@
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+#
+# Ruby Gem Path for Arch
+export GEM_HOME="$(ruby -e 'print Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -142,3 +146,17 @@ fi
 
 alias vi='vim'
 echo -ne '\e[5 q'
+export PATH="$HOME/.local/bin:$PATH"
+
+# Encryption key for Hive credential store (~/.hive/credentials)
+export HIVE_CREDENTIAL_KEY="UAXmgxnRF1L_rGldaRW0MORO1VfILQXOxKNYBkiGLBo="
+
+# Hive Agent Framework - Anthropic API key
+export ANTHROPIC_API_KEY="REMOVED"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
