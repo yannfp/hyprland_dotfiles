@@ -1,0 +1,114 @@
+* {
+    bg:          #11111b;
+    bg-alt:      #1e1e2e;
+    bg-hover:    #2a2a3d;
+    fg:          #cdd6f4;
+    fg-dim:      #585b70;
+    accent:      #cba6f7;
+    accent-dim:  #9a79d4;
+    urgent:      #f38ba8;
+
+    background-color:   transparent;
+    text-color:         @fg;
+    font:               "JetBrainsMono Nerd Font 13";
+}
+
+/* ── Window ── */
+window {
+    background-color:   @bg;
+	border:             1px;
+	border-color:       @accent-dim;
+    border-radius:      16px;
+    width:              500px;
+    padding:            16px;
+}
+
+/* ── Main layout ── */
+mainbox {
+    background-color:   transparent;
+    spacing:            10px;
+    children:           [ inputbar, listview ];
+}
+
+/* ── Search bar ── */
+inputbar {
+    background-color:   @bg-alt;
+    border-radius:      10px;
+    padding:            10px 14px;
+    spacing:            8px;
+    children:           [ prompt, entry ];
+}
+
+prompt {
+    background-color:   transparent;
+    text-color:         @accent;
+    font:               "JetBrainsMono Nerd Font Bold 13";
+	str:                "󰍉 ";
+}
+
+entry {
+    background-color:   transparent;
+    text-color:         @fg;
+    placeholder:        "Search...";
+    placeholder-color:  @fg-dim;
+    cursor:             text;
+}
+
+/* ── List ── */
+listview {
+    background-color:   transparent;
+    lines:              8;
+    columns:            1;
+    spacing:            4px;
+    scrollbar:          false;
+    border:             0px;
+}
+
+/* ── Items ── */
+element {
+    background-color:   transparent;
+    border-radius:      8px;
+    padding:            8px 12px;
+    spacing:            10px;
+    orientation:        horizontal;
+    children:           [ element-icon, element-text ];
+}
+
+element.normal.normal {
+    background-color:   transparent;
+    text-color:         @fg;
+}
+
+element.selected.normal {
+    background-color:   @bg-hover;
+    text-color:         @accent;
+}
+
+element.normal.urgent {
+    text-color:         @urgent;
+}
+
+element.selected.urgent {
+    background-color:   @bg-hover;
+    text-color:         @urgent;
+}
+
+element-icon {
+    background-color:   transparent;
+    size:               22px;
+}
+
+element-text {
+    background-color:   transparent;
+    text-color:         inherit;
+    vertical-align:     0.5;
+}
+
+/* ── Scrollbar (hidden but defined) ── */
+scrollbar {
+    background-color:   @bg-alt;
+    handle-color:       @fg-dim;
+    handle-width:       4px;
+    border-radius:      4px;
+    width:              4px;
+}
