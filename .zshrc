@@ -148,12 +148,6 @@ alias vi='vim'
 echo -ne '\e[5 q'
 export PATH="$HOME/.local/bin:$PATH"
 
-# Encryption key for Hive credential store (~/.hive/credentials)
-export HIVE_CREDENTIAL_KEY="UAXmgxnRF1L_rGldaRW0MORO1VfILQXOxKNYBkiGLBo="
-
-# Hive Agent Framework - Anthropic API key
-export ANTHROPIC_API_KEY="REMOVED"
-
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
