@@ -12,7 +12,7 @@ chosen=$(echo -e "$lock\n$sleep\n$restart\n$shutdown\n$logout" | rofi -dmenu \
     -display-drun "⏻  " \
     -p "⏻  " \
     -theme ~/.config/rofi/theme.rasi \
-    -theme-str 'window { width: 220px; } listview { lines: 5; }')
+    -theme-str 'window { width: 220px; } listview { lines: 5; } inputbar { enabled: false; }')
 
 # Actions
 case "$chosen" in
