@@ -7,9 +7,15 @@ let g:NERDTreeDirArrowExpandable = ' '
 let g:NERDTreeDirArrowCollapsible = ' '
 
 "DISPLAY
-let g:NERDTreeShowHidden = 1
+let g:NERDTreeShowHidden = 0
 let g:NERDTreeWinSize = 35
 let g:NERDTreeMinimalUI = 1
+
+" Tell nerdtree-git-plugin to hide git-ignored files
+let g:NERDTreeGitStatusUntrackedFilesMode = 'all'
+let g:NERDTreeGitStatusShowIgnored = 1
+let g:NERDTreeGitStatusConcealBrackets = 1
+let NERDTreeIgnore = ['\.deps$', '\.libs$', '\.o$', '\.lo$', '\.la$', '__pycache__', '\.dirstamp']
 
 " Remove the path header display
 let g:NERDTreeShowHelp = 0

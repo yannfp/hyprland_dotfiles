@@ -6,13 +6,17 @@ Plug 'mhinz/vim-startify'
 
 " Plugin for auto-closing brackets, parentheses, etc.
 "Plug 'jiangmiao/auto-pairs'
-Plug 'cohama/lexima.vim'
+" Plug 'cohama/lexima.vim'
 
 " The Tokyo Night theme
 Plug 'ghifarit53/tokyonight-vim'
 
 " Plugin for NERDTree
 Plug 'preservim/nerdtree'
+
+" Plugin for better syntax highlighthing
+Plug 'justinmk/vim-syntax-extra'
+
 " Plugins for NERDTree Appearance
 Plug 'ryanoasis/vim-devicons'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -35,6 +39,9 @@ Plug 'sheerun/vim-polyglot'
 " Plugin for fuzy finder Helps findeing files and text in it
 Plug 'junegunn/fzf.vim'
 
+" LSP
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 
 " --- 2. SOURCE MODULAR CONFIG FILES ---
@@ -49,5 +56,8 @@ execute 'source ' . s:dotfiles_dir . '/.vim/config/keymaps.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/airline.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/nerdtree.vim'
 execute 'source ' . s:dotfiles_dir . '/.vim/config/tags.vim'
+execute 'source ' . s:dotfiles_dir . '/.vim/config/coc.vim'
 
 autocmd BufRead,BufNewFile *.conf set filetype=sh
+autocmd BufRead,BufNewFile *.conf set filetype=sh
+autocmd BufRead,BufNewFile *.y,*.yy set filetype=yacc
