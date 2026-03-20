@@ -57,10 +57,11 @@ entry {
 /* ── List ── */
 listview {
     background-color:   transparent;
-    lines:              8;
+    lines:              5;
     columns:            1;
-    spacing:            4px;
+    spacing:            8px;
     scrollbar:          false;
+	fixed-height:       false;
     border:             0px;
 }
 

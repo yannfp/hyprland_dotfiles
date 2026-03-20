@@ -1,20 +1,22 @@
 #!/bin/bash
 
-# Options
 lock="󰌾  Lock"
 sleep="󰒲  Sleep"
 restart="󰑐  Restart"
 shutdown="󰐥  Shutdown"
 logout="󰍃  Logout"
 
-# Rofi menu
 chosen=$(echo -e "$lock\n$sleep\n$restart\n$shutdown\n$logout" | rofi -dmenu \
-    -display-drun "⏻  " \
-    -p "⏻  " \
+    -p "" \
+    -no-fixed-num-lines \
     -theme ~/.config/rofi/theme.rasi \
-    -theme-str 'window { width: 220px; } listview { lines: 5; } inputbar { enabled: false; }')
+    -theme-str '
+      window { width: 220px; }
+      listview { lines: 5; spacing: 0px; }
+      inputbar { enabled: false; }
+      element { padding: 8px 12px; }
+    ')
 
-# Actions
 case "$chosen" in
     "$lock")     hyprlock ;;
     "$sleep")    systemctl suspend ;;
