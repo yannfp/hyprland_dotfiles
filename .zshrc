@@ -127,14 +127,18 @@ fi
 # Allow to open vim with a shortcut
 if [[ -x /usr/bin/eza ]]; then
   alias ls='eza --color=always --group-directories-first --icons'
+
   # For hidden files
   alias lh='eza -a --color=always --group-directories-first --icons'
   alias la='eza -al --color=always --group-directories-first --icons'
   alias ll='eza -l --color=always --group-directories-first --icons'
   alias tree='eza -T --color=always --group-directories-first --icons'
+
   # For hidden files
   alias treeh='eza -aT --color=always --group-directories-first --icons'
   alias l.='eza -ald --color=always --group-directories-first --icons .*'
+
+  compdef eza=ls
 fi
 
 # Utilities
