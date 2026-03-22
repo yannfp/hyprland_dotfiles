@@ -61,3 +61,6 @@ execute 'source ' . s:dotfiles_dir . '/.vim/config/coc.vim'
 autocmd BufRead,BufNewFile *.conf set filetype=sh
 autocmd BufRead,BufNewFile *.conf set filetype=sh
 autocmd BufRead,BufNewFile *.y,*.yy set filetype=yacc
+
+" Detect testsuite.in as shell script
+autocmd BufRead,BufNewFile *.in set filetype=sh
